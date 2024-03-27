@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://plugin.powerschool.pearson.com"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd" name="Tulsa Public Schools Avela Enrollment" version="0.7.1" description="Tulsa Public Schools Avela Enrollment Plugin">
+
+  <publisher name="Tulsa Public Schools">
+    <contact phone="918-746-7500" email="devteam@tulsaschools.org"/>
+  </publisher>
+
+  <oauth />
+
+  <access_request>
+    <field table="schools" field="dcid" access="ViewOnly" />
+    <field table="schools" field="school_number" access="ViewOnly" />
+    <field table="schools" field="alternate_school_number" access="ViewOnly" />
+    <field table="schools" field="name" access="ViewOnly" />
+    <field table="schools" field="abbreviation" access="ViewOnly" />
+    <field table="schools" field="low_Grade" access="ViewOnly" />
+    <field table="schools" field="high_Grade" access="ViewOnly" />
+
+    <field table="students" field="dcid" access="ViewOnly" />
+    <field table="students" field="id" access="ViewOnly" />
+    <field table="students" field="student_number" access="ViewOnly" />
+    <field table="students" field="alert_other" access="FullAccess" />
+    <field table="students" field="city" access="FullAccess" />
+    <field table="students" field="dob" access="FullAccess" />
+    <field table="students" field="father" access="FullAccess" />
+    <field table="students" field="fedethnicity" access="FullAccess" />
+    <field table="students" field="first_name" access="FullAccess" />
+    <field table="students" field="gender" access="FullAccess" />
+    <field table="students" field="last_name" access="FullAccess" />
+    <field table="students" field="mailing_city" access="FullAccess" />
+    <field table="students" field="mailing_state" access="FullAccess" />
+    <field table="students" field="mailing_street" access="FullAccess" />
+    <field table="students" field="mailing_zip" access="FullAccess" />
+    <field table="students" field="middle_name" access="FullAccess" />
+    <field table="students" field="mother" access="FullAccess" />
+    <field table="students" field="state" access="FullAccess" />
+    <field table="students" field="street" access="FullAccess" />
+    <field table="students" field="transferComment" access="FullAccess" />
+    <field table="students" field="zip" access="FullAccess" />
+
+    <field table="s_ok_stu_x" field="studentsDcid" access="ViewOnly" />
+    <field table="s_ok_stu_x" field="armedForces" access="FullAccess" />
+    <field table="s_ok_stu_x" field="birthAuthority" access="FullAccess" />
+    <field table="s_ok_stu_x" field="birthCity" access="FullAccess" />
+    <field table="s_ok_stu_x" field="birthCountry" access="FullAccess" />
+    <field table="s_ok_stu_x" field="birthState" access="FullAccess" />
+    <field table="s_ok_stu_x" field="language1" access="FullAccess" />
+    <field table="s_ok_stu_x" field="language2" access="FullAccess" />
+    <field table="s_ok_stu_x" field="language3" access="FullAccess" />
+    <field table="s_ok_stu_x" field="nameSuffix" access="FullAccess" />
+    <field table="s_ok_stu_x" field="nationalGuard" access="FullAccess" />
+    <field table="s_ok_stu_x" field="reserve" access="FullAccess" />
+    <field table="s_ok_stu_x" field="section504" access="FullAccess" />
+    <field table="s_ok_stu_x" field="title1" access="FullAccess" />
+    <field table="s_ok_stu_x" field="gifted" access="FullAccess" />
+    <field table="s_ok_stu_x" field="giftedTalentedIdentified" access="FullAccess" />
+    <field table="s_ok_stu_x" field="vocationalConcentrator" access="FullAccess" />
+    <field table="s_ok_stu_x" field="coreCurriculum" access="FullAccess" />
+    <field table="s_ok_stu_x" field="technologicallyLiterate" access="FullAccess" />
+    <field table="s_ok_stu_x" field="provideToSeas" access="FullAccess" />
+    <field table="s_ok_stu_x" field="provideToCareerTech" access="FullAccess" />
+    <field table="s_ok_stu_x" field="fosterCare" access="FullAccess" />
+    <field table="s_ok_stu_x" field="dhsCustody" access="FullAccess" />
+    <field table="s_ok_stu_x" field="extracurricular" access="FullAccess" />
+    <field table="s_ok_stu_x" field="homeless" access="FullAccess" />
+    <field table="s_ok_stu_x" field="primaryNightTimeres" access="FullAccess" />
+    <field table="s_ok_stu_x" field="homelessMckinneyVento" access="FullAccess" />
+    <field table="s_ok_stu_x" field="homelessUnaccompaniedYouth" access="FullAccess" />
+    <field table="s_ok_stu_x" field="ndAtRisk" access="FullAccess" />
+    <field table="s_ok_stu_x" field="delinquent" access="FullAccess" />
+    <field table="s_ok_stu_x" field="ndJuvenileDetention" access="FullAccess" />
+    <field table="s_ok_stu_x" field="ndJuvenileCorrections" access="FullAccess" />
+    <field table="s_ok_stu_x" field="ndOther" access="FullAccess" />
+    <field table="s_ok_stu_x" field="altEdInd" access="FullAccess" />
+    <field table="s_ok_stu_x" field="migrant" access="FullAccess" />
+    <field table="s_ok_stu_x" field="immigrant" access="FullAccess" />
+
+    <field table="u_studentsUserFields" field="studentsDcid" access="ViewOnly" />
+    <field table="u_studentsUserFields" field="tps_alert_services" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_demographics_home_sch" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_demographics_preferredFI01" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_demographics_pub_info_op01" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_demographics_spanish_rep01" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_demographics_talent_rele01" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_ell_first_year_us_school" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_ell_hls_application_date" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_ell_hls_interpreter" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_ell_hls_interpreter2" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_ell_hls_translated_mater01" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_ell_hls_translated_mater02" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_state_mothers_maiden" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_transfer_quadrant" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_natamer_tribes" access="FullAccess" />
+    <field table="u_studentsUserFields" field="tps_natamer_cherokee_rollnbr" access="FullAccess" />
+
+    <field table="u_tps_indian_education" field="studentsDcid" access="ViewOnly" />
+    <field table="u_tps_indian_education" field="identify_native_american" access="FullAccess" />
+    <field table="u_tps_indian_education" field="tribal_member" access="FullAccess" />
+    <field table="u_tps_indian_education" field="tribal_member_name" access="FullAccess" />
+    <field table="u_tps_indian_education" field="tribe_membership_proof" access="FullAccess" />
+    <field table="u_tps_indian_education" field="ed506_date" access="FullAccess" />
+    <field table="u_tps_indian_education" field="jom_date" access="FullAccess" />
+    <field table="u_tps_indian_education" field="jom_info_release" access="FullAccess" />
+  </access_request>
+</plugin>
